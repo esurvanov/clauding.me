@@ -7,7 +7,8 @@ main{flex:1;display:flex;flex-direction:column;justify-content:center;max-width:
 .word{margin:0 0 .25em;font:600 clamp(1rem,2.2vw,1.25rem)/1 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
 h1{margin:0;font-size:clamp(2.8rem,10vw,6.5rem);line-height:1.02;letter-spacing:-.025em;font-weight:700}
 h1 em{font-style:normal;color:var(--accent)}
-.lang,.corner{position:fixed;font:600 .85rem/1 'JetBrains Mono',ui-monospace,monospace;color:var(--ink-3);text-decoration:none;border-bottom:1px solid var(--line-2);padding-bottom:3px}
-.lang{top:24px;right:24px}
-.corner{bottom:24px;right:24px}
-.lang:hover,.corner:hover{color:var(--ink);border-color:var(--accent)}
+.lang{position:fixed;top:24px;right:24px;font:600 .85rem/1 'JetBrains Mono',ui-monospace,monospace;color:var(--ink-3);text-decoration:none;border-bottom:1px solid var(--line-2);padding-bottom:3px}
+.corner{position:fixed;bottom:24px;right:24px;display:block;line-height:0;opacity:.75}
+.corner img{display:block;width:28px;height:28px;border-radius:7px}
+.lang:hover{color:var(--ink);border-color:var(--accent)}
+.corner:hover{opacity:1}
